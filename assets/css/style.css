@@ -1,0 +1,76 @@
+body{
+    background: #181818;
+    margin: 0;
+}
+nav h1{
+    color: #e50914;
+    font-family: 'MyFont';
+}
+.movie {
+    width: 300px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+.movie img {
+    width:100%;
+}
+
+.movie-info {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-info span{
+    background-color: midnightblue;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.movie-info span.green{
+    color: lawngreen;
+}
+.movie-info span.orange{
+    color: orange;
+}
+.movie-info span.red{
+    color: red;
+}
+.overview {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0px);
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('/fonts/college.woff2') format('woff2'),
+         url('/fonts/College.woff') format('woff'),
+         url('/fonts/College.ttf') format('truetype');
+  }
+
+  @media (max-width:480px){
+    nav h1{
+          font-size: 30px;
+      }
+      .btn{
+          padding: 4px 8px;
+          font-size: 14px;
+          margin-top: 10px;
+      }
+  }
+  img{
+      width:500px;
+  }
+
